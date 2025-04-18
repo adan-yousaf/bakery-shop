@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malt Bakery Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <style>
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body class="bg-yellow-50 text-gray-800 font-sans">
+
+  
+  <header class="bg-yellow-200 shadow-md p-4 sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-yellow-800">Malt Bakery Shop </h1>
+      <nav class="space-x-2 text-sm sm:space-x-4 sm:text-base">
+        
+        <a href="home.html" class="hover:text-white hover:bg-yellow-500 px-3 py-1 rounded">Home</a>
+        <a href="about.html" class="hover:text-white hover:bg-yellow-500 px-3 py-1 rounded">About Us</a>
+        <a href="contact us.html" class="hover:text-white hover:bg-yellow-500 px-3 py-1 rounded">Contact Us</a>
+        <a href="register.html" class="hover:text-white hover:bg-yellow-500 px-3 py-1 rounded">Register</a>
+        <a href="login.html" class="hover:text-white hover:bg-yellow-500 px-3 py-1 rounded">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section>
+    <img src="https://media.istockphoto.com/id/617603536/photo/freshly-baked-bread-on-wooden-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=Bz--TZRB-wsxWSVHNCknC2yvYtKnfA1ZdXHtChOI8cw="
+         alt="Bakery Hero"
+         class="w-full h-80 object-cover mt-4 rounded-lg shadow-lg" />
+  </section>
+
+  
+  <section class="py-10 px-4 max-w-6xl mx-auto">
+    <h2 class="text-2xl font-semibold text-center text-yellow-800 mb-6">Freshly Baked Goodies</h2>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1597528673850-e27492b0335f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnV0dGVyeSUyMGNyb3NzaWFudHxlbnwwfHwwfHx8MA%3D%3D"
+             class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-yellow-800 font-medium mt-2">Buttery Croissants</h3>
+        <button class="mt-2 bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">Add to Cart</button>
+      </div>
+
+      
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1658389997872-53b239936ba9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hvY29sYXRlJTIwY3VwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+             class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-yellow-800 font-medium mt-2">Chocolate Cupcakes</h3>
+        <button class="mt-2 bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">Add to Cart</button>
+      </div>
+
+    
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1537200275355-4f0c0714f777?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hvbGUlMjB3aGVhdCUyMGJyZWFkfGVufDB8fDB8fHww"
+             class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-yellow-800 font-medium mt-2">Whole Wheat Bread</h3>
+        <button class="mt-2 bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">Add to Cart</button>
+      </div>
+
+      
+      <div class="bg-white rounded-xl shadow-lg p-4 text-center">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80"
+             class="rounded-lg h-40 mx-auto object-cover" />
+        <h3 class="text-yellow-800 font-medium mt-2">Assorted Pastries</h3>
+        <button class="mt-2 bg-yellow-500 text-white px-4 py-1 rounded hover:bg-yellow-600">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="max-w-4xl mx-auto px-4 mt-10">
+    <h2 class="text-xl font-semibold text-yellow-800 mb-4">Product Table</h2>
+
+    
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-yellow-300 text-sm">
+        <thead class="bg-yellow-100 text-yellow-800">
+          <tr>
+            <th class="p-2 border">Product</th>
+            <th class="p-2 border">Price</th>
+            <th class="p-2 border">Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="p-2 border">Croissants</td>
+            <td class="p-2 border">$2.50</td>
+            <td class="p-2 border">In Stock</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-2 border">Cupcakes</td>
+            <td class="p-2 border">$1.20</td>
+            <td class="p-2 border">Low Stock</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-2 border">Bread Loaf</td>
+            <td class="p-2 border">$3.00</td>
+            <td class="p-2 border">In Stock</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  
+  <footer class="bg-yellow-200 text-center py-4 mt-10">
+    <p class="text-yellow-800">&copy; Malt Bakery Shop</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakery Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-100 font-sans">
+
+  <h1 class="text-6xl text-center italic text-amber-800 mt-10">Bakery Shop</h1>
+
+  <div class="flex flex-wrap justify-center items-center gap-6 mt-10">
+    <button id="homeBtn" class="bg-yellow-300 hover:bg-yellow-400 text-brown-800 font-bold px-6 py-2 rounded">Home</button>
+
+    <label for="Interest" class="text-xl font-semibold text-amber-900">Category</label>
+    <select id="Interest" class="px-4 py-2 rounded border border-yellow-300">
+      <option value="Cakes">Cakes</option>
+      <option value="Cookies">Cookies</option>
+      <option value="Breads">Breads</option>
+      <option value="Pastries">Pastries</option>
+    </select>
+
+    <button class="bg-yellow-300 hover:bg-yellow-400 text-brown-800 font-bold px-6 py-2 rounded">Contact</button>
+
+    <a href="about.html">
+      <button class="bg-yellow-300 hover:bg-yellow-400 text-brown-800 font-bold px-6 py-2 rounded">About</button>
+    </a>
+
+    <button class="bg-yellow-300 hover:bg-yellow-400 text-brown-800 font-bold px-6 py-2 rounded">Menu</button>
+  </div>
+
+  <!-- Quotation Card -->
+  <div class="max-w-xl mx-auto mt-16 bg-yellow-200 shadow-lg rounded-lg p-6 text-center">
+    <h2 class="text-xl text-amber-900 font-semibold">
+      "Unleash your creativity, one post at a time. Where every idea finds its voice and every word inspires."
+    </h2>
+  </div>
+
+  <!-- Bakery Image -->
+  <div class="absolute left-[1200px] top-[400px]">
+    <img src="https://media.istockphoto.com/id/182898255/photo/basket-with-fresh-bread.jpg?s=612x612&w=is&k=20&c=5F-b7Cvmtz1lsWqZex_m_d0J_cLWyMHLclF-0tCdU0g=" alt="bakery" class="w-[400px] rounded shadow-lg">
+  </div>
+
+  <!-- Tagline -->
+  <h2 class="absolute top-[400px] left-[350px] text-3xl text-orange-800 font-semibold">
+    Freshly Baked Goodness, Just For You!
+  </h2>
+
+  <!-- Register Button -->
+  <a href="register.html">
+    <button id="registerBtn" class="absolute top-[510px] left-[600px] text-white text-xl bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-lg">
+      Click to Register
+    </button>
+  </a>
+
+  <script>
+    // Home button alert with quote
+    document.getElementById("homeBtn").addEventListener("click", function () {
+      alert("Unleash your creativity, one post at a time. Where every idea finds its voice and every word inspires.");
+    });
+
+    // Register button alert
+    document.getElementById("registerBtn").addEventListener("click", function () {
+      alert("Welcome to the Bakery Shop! Let's get you registered.");
+    });
+
+    // Interest category selection alert
+    document.getElementById("Interest").addEventListener("change", function () {
+      const selected = this.value;
+      alert("You selected: " + selected);
+    });
+  </script>
+
+</body>
+</html>

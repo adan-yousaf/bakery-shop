@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Bakery Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-100 font-sans">
+
+  <h1 class="text-5xl text-center italic text-amber-800 mt-10">About Our Bakery</h1>
+
+  <div class="flex justify-center mt-10">
+    <div class="bg-yellow-200 rounded-xl shadow-lg p-8 max-w-3xl text-center">
+      <h2 class="text-3xl text-orange-800 font-bold mb-4">Malt bakery</h2>
+      <p class="text-lg text-gray-700 leading-relaxed">
+       our bakery has been bringing warmth, sweetness, and joy to every home.
+        We believe in fresh ingredients, handmade love, and serving happiness with every bite.
+        Whether it’s bread, cakes, or cookies — everything is made with heart.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="text-center mt-10">
+    <button id="learnMoreBtn" class="bg-yellow-400 hover:bg-yellow-500 text-white text-lg font-semibold px-6 py-3 rounded-lg">
+      Learn More
+    </button>
+  </div>
+
+  <script>
+    // Learn More button functionality
+    document.getElementById("learnMoreBtn").addEventListener("click", function () {
+      alert("We started with just a tiny oven and a dream. Today, we serve thousands with love!");
+    });
+  </script>
+
+</body>
+</html>
